@@ -9,5 +9,11 @@ export const signIn = (req: Request, res: Response) => {
 };
 
 export const profile = (req: Request, res: Response) => {
-  res.send("profile");
+  const user = {
+    name: "name prueba",
+    num: 1,
+  };
+
+  //res.send("profile");
+  res.json(user);
 };
