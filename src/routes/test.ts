@@ -4,8 +4,8 @@ const router: Router = Router();
 
 import { getUser, getUsers } from "../controllers/test.controller";
 
-router.route("/user").get(getUser);
+router.get("/user", getUser);
 
-router.route("/users").get(getUsers);
+router.get("/users", getUsers);
 
 export default router;
